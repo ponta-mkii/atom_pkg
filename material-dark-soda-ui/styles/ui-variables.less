@@ -1,0 +1,121 @@
+
+// UI Variables
+// -------------------
+
+// These are the official UI variables that every UI theme should define.
+// It allows other packages to match your theme.
+
+// Overrides: atom/static/variables/ui-variables.less
+
+// Try to edit some of the values below to see your theme change.
+// A good start is to change the color of the `@base-background-color` variable.
+
+// MY COLORS
+// Typical white text
+@foreground: #FAFAFA;
+@invisibles: #424242;
+// Standard background color
+@background: #212121;
+@background-lighter: #262626;
+@background-lightest: #303030;
+// Comments
+@gray: #888888;
+@gray-darker: #5A5A5A;
+// Strings
+@yellow: #FFF59D;
+// Constants/numbers/booleans/etc.
+@magenta: #F48FB1;
+// PHP Namespaces
+@magenta-light: #FFB2F9;
+// Keywords/tag names/etc.
+@red: #E91E63;
+// JSON keys/const keywords, etc.
+@cyan: #42A5F5;
+// HTML attributes/function names
+@green: #9CCC65;
+// Function arguments
+@orange: #FFAB40;
+// White
+@white: #FFFFFF;
+
+// Text Colors
+@text-color:           #D4D4D4;
+@text-color-subtle:    darken(@text-color, 35%);
+@text-color-highlight: hsl(0,0%,94%);
+@text-color-selected:  @white;
+
+@text-color-info:    lighten(@background-color-info, 10%);
+@text-color-success: lighten(@background-color-success, 10%);
+@text-color-warning: lighten(@background-color-warning, 10%);
+@text-color-error:   lighten(@background-color-error, 10%);
+
+// Background colors
+@background-color-info:    darken(#42A5F5, 10%);
+@background-color-success: darken(#9CCC65, 15%);
+@background-color-warning: darken(#FFAB40, 10%);
+@background-color-error:   darken(#F44336, 10%);
+
+@background-color-highlight: lighten(@base-background-color, 5%);
+@background-color-selected:  lighten(@base-background-color, 10%);
+@app-background-color:       darken(@base-background-color, 5%);
+
+// Base colors
+@base-background-color: #262626;
+@base-border-color:     darken(@base-background-color, 8%);
+
+// Component colors
+@pane-item-background-color: @base-background-color;
+@pane-item-border-color:     @base-border-color;
+
+@input-background-color: @app-background-color;
+@input-border-color:     @base-border-color;
+
+@tool-panel-background-color: @base-background-color;
+@tool-panel-border-color:     @base-border-color;
+
+@inset-panel-background-color: lighten(@base-background-color, 4%);
+@inset-panel-border-color:     @base-border-color;
+
+@panel-heading-background-color: lighten(@base-background-color, 4%);
+@panel-heading-border-color:     @base-border-color;
+
+@overlay-background-color: lighten(@base-background-color, 5%);
+@overlay-border-color:     @base-border-color;
+
+@button-background-color:          lighten(@base-background-color, 10%);
+@button-background-color-hover:    lighten(@button-background-color, 12%);
+@button-background-color-selected: @button-background-color-hover;
+@button-border-color:              @base-border-color;
+
+@tab-bar-background-color:    #252526;
+@tab-bar-border-color:        #252526;
+@tab-background-color:        #2D2D2D;
+@tab-background-color-active: #212121;
+@tab-border-color:            #252526;
+
+@tree-view-background-color: @base-background-color;
+@tree-view-border-color:     @base-border-color;
+
+// Site colors
+@ui-site-color-1: @background-color-info; // blue
+@ui-site-color-2: @background-color-success; // green
+@ui-site-color-3: @background-color-warning; // orange
+@ui-site-color-4: @magenta;             // pink
+@ui-site-color-5: @yellow;             // yellow
+
+// Sizes
+@font-size: 12px;
+@input-font-size: 14px;
+
+@disclosure-arrow-size: 12px;
+
+@component-padding: 10px;
+@component-icon-padding: 5px;
+@component-icon-size: 16px;
+@component-line-height: 25px;
+
+@tab-height: 35px;
+
+// Misc
+@component-border-radius: 2px;
+@font-family: '.SFNSText-Regular', 'SF UI Text', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
